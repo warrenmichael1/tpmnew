@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TPM2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="ui huge header  center aligned" style="margin-top:30px">
+    TPM for Nation Identification Authority
+  </div>
+  <div class="" style="margin:15px;">
+    <div class="ui four item menu">
+      <a href="/dvla" class="item">Driver and Vehicle Licensing Authority</a>
+      <a href="/nhia" class="item">National Health Insurance Authority</a>
+      <a href="/gis" class="item">Ghana Immigration Service</a>
+      <a href="/ec" class="item">Electoral Commission</a>
+    </div>
+  </div>
+    <div class="" style="margin:15px;">
+      <%= yield %>
+    </div>
+    
+  </body>
+</html>
+
+<script>
+
+  $(document).on('turbolinks:load', function(){
+    
+    $('.ui .item').click(function(){
+      $('.ui .active').removeClass('active');
+      $(this).addClass('active')
+    });
+  });
+</script>

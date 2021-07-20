@@ -1,0 +1,2 @@
+class GisUser < GisRecord
+end

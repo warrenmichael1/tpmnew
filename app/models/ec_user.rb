@@ -1,0 +1,2 @@
+class EcUser < EcRecord
+end

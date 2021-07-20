@@ -1,0 +1,2 @@
+class DvlaUser < DvlaRecord
+end

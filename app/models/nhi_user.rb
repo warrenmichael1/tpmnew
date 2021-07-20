@@ -1,0 +1,2 @@
+class NhiUser < NhiRecord
+end
